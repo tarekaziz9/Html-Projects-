@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
     <title>html_project</title>
+
+    <!-- fonteosome Icon CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    body{background-color: rgb(228, 237, 245);
+      font-family: "Roboto Condensed", sans-serif;
+    }
+ 
+</style>
+
 </head>
 <html>
 <body>
     <main>
+        
         <!-- Header Option -->
          <Section>
             <nav>
@@ -70,11 +88,11 @@
                </tr>
                <tr>
                 <td>Illustrator</td>
-                <td>4 years</td>
+                <td rowspan="2
+                ">4 years</td>
                </tr>
                <tr>
                 <td>Primer pro</td>
-                <td>4 years</td>
                </tr>
             </tbody>
          </table>
@@ -97,23 +115,62 @@
 <h2>Contact Me</h2>
 
 <form>
-    <label for="Name">Name:</label>
+    <div>
+        <label for="Name">Name:</label>
     <input type="text" id="Name" name="Name" required>
+    </div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-      <label for="message">Message:</label>
-    <textarea id="message" name="message" cols="15" rows="5" required></textarea>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" cols="15" rows="5" required></textarea>
+    </div>
+    <label for="website">Website</label>
+    <input type="url" name="website" id="website">
+     <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="16" max="35">
+    </div>
+    <div>
+        <label for="Subject">Subject</label>
+        <select name="Subject" id="Subject">
+        <option value="inquiry">Inquiry</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Job Opportunity">Job Opportunity</option>
+        </select>
+    </div>
 
     <button type="submit">Submit</button>
     <button type="reset">Clear</button>
 </form>
 
 <footer>
+
+   
     <p>&copy; 2026 tsdall All rights reserved.</p>
+    <p>&hearts; Developed With &hearts;</p>
     <a href="tel:01571377405">Call Us</a>
     <a href="mailto:tarekpramanik109@gmail.com">Email Me</a>
 
+    <div>
+         <h2>Flow Me</h2>
+    <ol>
+     <ul><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></ul>
+       <ul><a href=""><i class="fa-brands fa-linkedin-in"></i></i>Linkind</a></ul>
+        <ul><a href=""><i class="fa-brands fa-linkedin-in"></i></i>Instagram</a></ul>
+    </ol>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58441.60438610761!2d90.35103129755616!3d23.725964472396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8d73a64e709%3A0x65a4e99bd5bb0ebd!2sOld%20Dhaka%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1782978540339!5m2!1sen!2sbd" 
+       title="My Location"
+        width="300" height="300" 
+        style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
 </footer>
 </html>
